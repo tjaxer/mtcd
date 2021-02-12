@@ -10,8 +10,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/btcsuite/btcd/txscript"
 	"github.com/davecgh/go-spew/spew"
+	"github.com/tjaxer/mtcd/txscript"
 )
 
 // TestGetAddressInfoResult ensures that custom unmarshalling of

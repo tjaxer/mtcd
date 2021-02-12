@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/btcsuite/btcd/wire"
+	"github.com/tjaxer/mtcd/wire"
 )
 
 // randAddr generates a *wire.NetAddress backed by a random IPv4/IPv6 address.
