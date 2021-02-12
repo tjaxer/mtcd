@@ -13,7 +13,7 @@ import (
 	"github.com/tjaxer/mtcd/database"
 	_ "github.com/tjaxer/mtcd/database/ffldb"
 	"github.com/tjaxer/mtcd/wire"
-	"github.com/btcsuite/btcutil"
+	"github.com/tjaxer/mtcutil"
 	flags "github.com/jessevdk/go-flags"
 )
 
@@ -24,7 +24,7 @@ const (
 )
 
 var (
-	btcdHomeDir     = btcutil.AppDataDir("btcd", false)
+	btcdHomeDir     = mtcutil.AppDataDir("btcd", false)
 	defaultDataDir  = filepath.Join(btcdHomeDir, "data")
 	knownDbTypes    = database.SupportedDrivers()
 	activeNetParams = &chaincfg.MainNetParams

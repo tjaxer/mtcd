@@ -10,7 +10,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/btcsuite/btcutil"
+	"github.com/tjaxer/mtcutil"
 	"github.com/tjaxer/mtcd/chaincfg"
 	"github.com/tjaxer/mtcd/database"
 	_ "github.com/tjaxer/mtcd/database/ffldb"
@@ -18,7 +18,7 @@ import (
 )
 
 var (
-	btcdHomeDir     = btcutil.AppDataDir("btcd", false)
+	btcdHomeDir     = mtcutil.AppDataDir("btcd", false)
 	knownDbTypes    = database.SupportedDrivers()
 	activeNetParams = &chaincfg.MainNetParams
 

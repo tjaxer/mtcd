@@ -10,7 +10,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/btcsuite/btcutil"
+	"github.com/tjaxer/mtcutil"
 	"github.com/tjaxer/mtcd/chaincfg"
 	"github.com/tjaxer/mtcd/database"
 	_ "github.com/tjaxer/mtcd/database/ffldb"
@@ -136,7 +136,7 @@ func Example_blockStorageAndRetrieval() {
 	// and example.
 	err = db.Update(func(tx database.Tx) error {
 		genesisBlock := chaincfg.MainNetParams.GenesisBlock
-		return tx.StoreBlock(btcutil.NewBlock(genesisBlock))
+		return tx.StoreBlock(mtcutil.NewBlock(genesisBlock))
 	})
 	if err != nil {
 		fmt.Println(err)

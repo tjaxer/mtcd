@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/btcsuite/btcutil"
+	"github.com/tjaxer/mtcutil"
 	"github.com/tjaxer/mtcd/btcec"
 	"github.com/tjaxer/mtcd/chaincfg"
 	"github.com/tjaxer/mtcd/wire"
@@ -141,7 +141,7 @@ func (s PkScript) Script() []byte {
 }
 
 // Address encodes the script into an address for the given chain.
-func (s PkScript) Address(chainParams *chaincfg.Params) (btcutil.Address, error) {
+func (s PkScript) Address(chainParams *chaincfg.Params) (mtcutil.Address, error) {
 	_, addrs, _, err := ExtractPkScriptAddrs(s.Script(), chainParams)
 	if err != nil {
 		return nil, fmt.Errorf("unable to parse address: %v", err)

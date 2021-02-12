@@ -11,7 +11,7 @@ import (
 	"github.com/tjaxer/mtcd/mempool"
 	"github.com/tjaxer/mtcd/peer"
 	"github.com/tjaxer/mtcd/wire"
-	"github.com/btcsuite/btcutil"
+	"github.com/tjaxer/mtcutil"
 )
 
 // PeerNotifier exposes methods to notify peers of status changes to
@@ -24,7 +24,7 @@ type PeerNotifier interface {
 
 	RelayInventory(invVect *wire.InvVect, data interface{})
 
-	TransactionConfirmed(tx *btcutil.Tx)
+	TransactionConfirmed(tx *mtcutil.Tx)
 }
 
 // Config is a configuration struct used to initialize a new SyncManager.

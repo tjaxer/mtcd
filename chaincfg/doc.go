@@ -25,7 +25,7 @@
 //          "fmt"
 //          "log"
 //
-//          "github.com/btcsuite/btcutil"
+//          "github.com/tjaxer/mtcutil"
 //          "github.com/tjaxer/mtcd/chaincfg"
 //  )
 //
@@ -46,7 +46,7 @@
 //
 //          // Create and print new payment address, specific to the active network.
 //          pubKeyHash := make([]byte, 20)
-//          addr, err := btcutil.NewAddressPubKeyHash(pubKeyHash, chainParams)
+//          addr, err := mtcutil.NewAddressPubKeyHash(pubKeyHash, chainParams)
 //          if err != nil {
 //                  log.Fatal(err)
 //          }
